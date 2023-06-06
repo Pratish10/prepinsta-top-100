@@ -1,29 +1,21 @@
-// C++ Program to find the Greatest of three numbers
+// Program to Check Whether a Year is a Leap Year or Not in C++
 
 #include <iostream>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int i, j, k;
-    cout << "Enter 1st number : ";
+    int i;
+    cout << "Enter year: ";
     cin >> i;
-    cout << "Enter 2nd number : ";
-    cin >> j;
-    cout << "Enter 3rd number : ";
-    cin >> k;
 
-    if (i > j && i > k)
+    if (i % 4 == 0)
     {
-        cout << i << " is greater.";
-    }
-    else if (j > i && j > k)
-    {
-        cout << j << " is greater.";
+        cout << i << " is a Leap Year";
     }
     else
     {
 
-        cout << k << " is greater.";
+        cout << i << " not a Leap Year";
     }
 }
