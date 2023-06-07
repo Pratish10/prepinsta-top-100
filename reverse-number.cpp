@@ -1,11 +1,11 @@
-// C++ Program to find the Sum of Digits of a Number
+// C++ Program to find the Reverse of a Number
 
 #include <iostream>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int i, sum = 0, j;
+    int i, r = 0, j;
     cout << "Enter number: ";
     cin >> i;
 
@@ -14,8 +14,8 @@ int main(int argc, char const *argv[])
     while (i != 0)
     {
         j = i % 10;
-        sum = sum + j;
+        r = (r * 10) + j;
         i = i / 10;
     }
-    cout << sum << endl;
+    cout << r << endl;
 }
